@@ -34,7 +34,7 @@ function click(element){
 						strHtml +=	'">';
 						strHtml += $san_pham[i].Name;
 						strHtml	+= '</div>';
-						strHtml += '<div onclick="Click(this)" id="';
+						strHtml += '<div onclick="click(this)" id="';
 						strHtml += strID1;	
 						strHtml +=	'"><a href="#"><span>';
 						strHtml += $san_pham[i].Img;
