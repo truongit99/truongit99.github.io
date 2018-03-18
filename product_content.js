@@ -29,12 +29,12 @@ function click(element){
 					{
 						strID1="1";
 						strID1 +=i;
-						strHtml += '<div onclick="click(this)" id="';
+						strHtml += '<div onclick="Click(this)" id="';
 						strHtml += strID1;	
 						strHtml +=	'">';
 						strHtml += $san_pham[i].Name;
 						strHtml	+= '</div>';
-						strHtml += '<div onclick="click(this)" id="';
+						strHtml += '<div onclick="Click(this)" id="';
 						strHtml += strID1;	
 						strHtml +=	'"><a href="#"><span>';
 						strHtml += $san_pham[i].Img;
@@ -46,18 +46,6 @@ function click(element){
 			 
 			 }); 
 			 
-			//cache the elements we'll need       
-      	var menu = $('#menu');
-		var menuList = menu.find('ul:first');
-		var listItems = menu.find('li').not('#responsive-tab');
-		
-		//create responsive trigger
-		menuList.prepend('<li id="#responsive-tab"><a href ="#">Menu</a></li>');
-		
-		//toggle menu visibility
-		menu.on('click', '#responsive-tab', function(){
-			listItems.slideToggle('fast');
-			listItems.addClass('collapsed');			
-			});	  
+			  
 	  });
  }) (jQuery);
