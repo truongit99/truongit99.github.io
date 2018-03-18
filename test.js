@@ -29,7 +29,7 @@ function click(element){
 					{
 						strID1="1";
 						strID1 +=i;
-						strHtml += '<div onclick="Click(this)" id="';
+						strHtml += '<div onclick="click(this)" id="';
 						strHtml += strID1;	
 						strHtml +=	'">';
 						strHtml += $san_pham[i].Name;
