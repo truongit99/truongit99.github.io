@@ -379,6 +379,18 @@ nav.vertical li:hover > ul{
 	width: 70%;
 }
 
+#lien_he_map_1
+{
+	float: right;
+	width: 95%;
+}
+
+#lien_he_map_2
+{
+	float: right;
+	width: 95%;
+}
+
 .lien_he_button
 {
 	font-family: rukola;
@@ -386,8 +398,8 @@ nav.vertical li:hover > ul{
 	width: 367px;
 	height: 100px;
 	background-color: transparent;
-	border: 4px deeppink solid;
-	border-radius: 3px;
+	border: 2px deeppink solid;
+	border-radius: 10px;
 }
 
 .lien_he_button:hover
