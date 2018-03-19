@@ -379,13 +379,7 @@ nav.vertical li:hover > ul{
 	width: 70%;
 }
 
-#lien_he_map_1
-{
-	float: right;
-	width: 95%;
-}
-
-#lien_he_map_2
+#lien_he_map_1, #lien_he_map_2
 {
 	float: right;
 	width: 95%;
