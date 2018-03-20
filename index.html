@@ -16,7 +16,7 @@
       <ul >
            <li><a href="index.html">TRANG CHỦ</a></li>
        		<li class="dropdown">
- 		  	 <a href="javascript:void(0)" class="dropbtn">MẮT KÍNH</a>
+ 		  	 <a href="javascript:void(0)" class="dropbtn">SẢN PHẨM</a>
     		 <div class="dropdown-content">
       			<a href="#">ÁP TRÒNG</a>
      			<a href="#">THƯỜNG</a>
@@ -77,5 +77,18 @@
   </footer>
 </div>
 
+<script type="text/javascript">
+	$("document").ready(function($){
+    var nav = $('.container');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 125) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+    });
+});
+</script>
 </body>
 </html>
