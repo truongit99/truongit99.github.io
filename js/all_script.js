@@ -1,28 +1,11 @@
-//script của trang sản phẩm 	
-
-
-var $san_pham=[
-		{type:"ap_trong", branches: "Doll Eyes", content:'nội dung đơn lẻ (áp tròng) 1'},
-		{type:"ap_trong", branches: "Seed Việt Nam", content: 'nội dung đơn lẻ (áp tròng)  2'},
-		{type:"ap_trong", branches: "Angel Eyes", content: 'nội dung đơn lẻ (áp tròng)  3'},
-		{type:"ap_trong", branches: "Circle’s Shop", content: 'nội dung đơn lẻ (áp tròng)  4'},
-		{type:"ap_trong", branches: "Vassen", content: 'nội dung đơn lẻ (áp tròng) 5'},
-		{type:"ap_trong", branches: "Kabi Store", content: 'nội dung đơn lẻ (áp tròng) 6'},
-		{type: 'kinh', branches: 'Ray-ban', content: 'nội dung đơn lẻ (kính) 1'},
-		{type: 'kinh', branches: 'Oakley', content: 'nội dung đơn lẻ (kính) 2'},
-		{type: 'kinh', branches: 'Dolce &amp; Gabbana', content: 'nội dung đơn lẻ (kính) 3'},
-		{type: 'kinh', branches: 'BVLgari', content: 'nội dung đơn lẻ (kính) 4'},
-		{type: 'kinh', branches: 'Burberry', content: 'nội dung đơn lẻ (kính) 5'},
-		{type: 'kinh', branches: 'Versace', content: 'nội dung đơn lẻ (kính) 6'}
-		 ]; 
-			 
+//script của trang sản phẩm 			 
 function noidungsanpham(element){
 	"use strict";
 	//alert(element.id);
 	var strHtml="";
 	var strID=element.id;
 	var aIndex= strID.substr(1);
-	strHtml+=$san_pham[aIndex].content;
+	strHtml += $san_pham[aIndex].content;
 	document.getElementById("product_content").innerHTML=strHtml;
 	}
 
@@ -43,7 +26,7 @@ function noidungsanpham(element){
 						strHtml += '<li onclick="noidungsanpham(this)" id="';
 						strHtml += strID1;
 						strHtml += '"><a href="#">';
-						strHtml += $san_pham[i].branches;
+						strHtml += $san_pham[i].brand_showname;
 						strHtml +=	'</a></li>';
 					} 
 			}	
