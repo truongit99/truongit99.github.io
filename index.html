@@ -1,13 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>TRANG CHỦ</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="js/all_var.js"></script>
-	<script type="text/javascript" src="js/all_script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -16,33 +13,22 @@
       <a href="index.html"><img class="title" src="logo.png" width="100%" alt="logo.png" title="Chào mừng các bạn đến với công ty kính mắt Eyeonic"/></a>
     </div>
     <nav class="secondary_header">
-      <ul>
-           <li><a href="index.html">TRANG CHỦ</a></li>
+      <ul >
+           <li><a href="trang_chu.html">TRANG CHỦ</a></li>
        		<li class="dropdown">
- 		  	 <a href="javascript:void(0)" class="dropbtn">SẢN PHẨM</a>
+ 		  	 <a href="javascript:void(0)" class="dropbtn">MẮT KÍNH</a>
     		 <div class="dropdown-content">
-      			<a href="#" id="ap_trong" onClick="xoa_noidung()">ÁP TRÒNG</a>
-      			<a href="#" id="kinh" onClick="xoa_noidung()">KÍNH THỜI TRANG</a>
+      			<a href="#">ÁP TRÒNG</a>
+     			<a href="#">THƯỜNG</a>
+      			<a href="gong_kinh.html">GỌNG KÍNH</a>
     		 </div>
  		  </li>
-         <li><a href="#" onClick="lien_he()">LIÊN HỆ</a></li>
+		<li><a href="gong_kinh.html">GỌNG KÍNH</a></li>
+         <li><a href="lien_he.html">LIÊN HỆ</a></li>
       </ul>
     </nav>
   </header>
-	
-	<!-- Xóa nội dung các sản phẩm của hãng khi click sang mục khác như ÁP TRÒNG/KÍNH THỜI TRANG -->
-	<script>
-	function xoa_noidung()
-		{
-			document.getElementById("product_content").innerHTML='';
-		}
-	</script>
-	<!-- đóng khung tạm script này vào đây -->
-	
-	
-	<div id="menu_va_noidung"><!-- khung tất cả cho dễ hiểu xD xuống dưới sẽ thấy comment tương tự-->
-	
-	<div id="product_menu">
+  <section>
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
       <h3>GIỚI THIỆU</h3>
@@ -50,7 +36,7 @@
       <p>Sự đa dạng về mẫu mã, phong phú về mặt giá thành cùng với đội ngũ nhân viên tư vấn có kiến thức chuyên sâu sẽ tư vấn cho khách hàng những kiểu dáng mắt kính đẹp phù hợp với gương mặt, biến những cặp kính thuốc trở thành những cặp kính thời trang giúp Quý Khách cảm thấy hoàn toàn tự tin, thoải mái trong công việc và những lúc vui chơi giải trí.</p>
     </article>
     <aside class="right_article"><img src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/> </aside>
-		 
+  </section>
   <div class="row">
     <div class="columns">
       <p class="thumbnail_align"><img width="250px;" src="pics in homepage/Cartier ESW00050_25m.png" alt="Cartier ESW00050"/> </p>
@@ -82,19 +68,11 @@
     </div>
   </div>
   <div class="social">
-    <p class="social_icon"><a href="index.html"><img src="pics in homepage/money.png" width="42px" alt=""/></a></p>
-    <p class="social_icon"><a href="index.html"><img src="pics in homepage/cards.png" width="76px" alt=""/></a></p>
-    <p class="social_icon"><a href="index.html"><img src="pics in homepage/safe.png" width="57px" alt=""/></a></p>
-    <p class="social_icon"><a href="index.html"><img src="pics in homepage/support.png" width="61px" alt=""/></a></p>
-  </div> 
-	</div> <!-- ~ID product menu~ HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-->
-	
-	<div id="product_content">
-	
-	</div>
-		
-		</div> <!-- khung tất cả cho dễ hiểu xD -->
-	
+    <p class="social_icon"><a href="lien_he.html"><img src="pics in homepage/money.png" width="42px" alt="" /></a></p>
+    <p class="social_icon"><a href="lien_he.html"><img src="pics in homepage/cards.png" width="76px" alt="" /></a></p>
+    <p class="social_icon"><a href="lien_he.html"><img src="pics in homepage/safe.png" width="57px" alt="" /></a></p>
+    <p class="social_icon"><a href="lien_he.html"><img src="pics in homepage/support.png" width="61px" alt="" /></a></p>
+  </div>
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2018 - <strong>L_T_Q</strong></div>
   </footer>
