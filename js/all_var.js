@@ -1,15 +1,40 @@
 // JavaScript Document
 var $san_pham=[
-		{type:"ap_trong",brand:'doll_eyes', brand_showname: "Doll Eyes", content:'nội dung đơn lẻ (áp tròng) 1'},
-		{type:"ap_trong",brand:'seed_vietnam', brand_showname: "Seed Việt Nam", content: 'nội dung đơn lẻ (áp tròng)  2'},
-		{type:"ap_trong",brand:'angel_eyes', brand_showname: "Angel Eyes", content: 'nội dung đơn lẻ (áp tròng)  3'},
-		{type:"ap_trong",brand:'circles_shop', brand_showname: "Circle’s Shop", content: 'nội dung đơn lẻ (áp tròng)  4'},
-		{type:"ap_trong",brand:'vassen', brand_showname: "Vassen", content: 'nội dung đơn lẻ (áp tròng) 5'},
-		{type:"ap_trong",brand:'kabi_store', brand_showname: "Kabi Store", content: 'nội dung đơn lẻ (áp tròng) 6'},
-		{type: 'kinh',brand:'rayban', brand_showname: 'Ray-ban', content: 'nội dung đơn lẻ (kính) 1'},
-		{type: 'kinh',brand:'oakley', brand_showname: 'Oakley', content: 'nội dung đơn lẻ (kính) 2'},
-		{type: 'kinh',brand:'dolce_gabbana', brand_showname: 'Dolce &amp; Gabbana', content: 'nội dung đơn lẻ (kính) 3'},
-		{type: 'kinh',brand:'bvlgari', brand_showname: 'BVLgari', content: 'nội dung đơn lẻ (kính) 4'},
-		{type: 'kinh',brand:'burberry', brand_showname: 'Burberry', content: 'nội dung đơn lẻ (kính) 5'},
-		{type: 'kinh',brand:'versace', brand_showname: 'Versace', content: 'nội dung đơn lẻ (kính) 6'}
+		//lens yeye
+		{brand: 'amo', name: 'Lens AMO 1 ngày'},
+		{brand: 'amo', name: 'Lens AMO màu 3 tháng'},
+		{brand: 'amo', name: 'Lens AMO trắng 1 tháng'},
+
+		{brand: 'maxim', name: 'Lens Maxim màu 1 ngày'},
+		{brand: 'maxim', name: 'Lens Maxim màu 3 tháng'},
+
+		{brand: 'seed', name: 'Lens Seed 1 ngày'},
+		{brand: 'seed', name: 'Lens Seed màu 1 ngày'},
+		{brand: 'seed', name: 'Lens Seed 1 tháng'},
+
+		{brand: 'bl', name: 'Nước ngâm Bausch &amp; Lomb lớn'},
+		{brand: 'bl', name: 'Nước ngâm Bausch &amp; Lomb lớn'},
+		{brand: 'bl', name: 'Nước nhỏ mắt Bausch &amp; Lomb'},
+
+		{brand: 'freshvue', name: 'Nước ngâm FreshVue lớn'},
+		{brand: 'freshvue', name: 'Nước ngâm FreshVue nhỏ'},
+
+		{brand: 'freshkon', name: 'FreshKon Colors Fusion - Baby Aqua'},
+		{brand: 'freshkon', name: 'FreshKon Colors Fusion - Brilliant Brown'},
+		{brand: 'freshkon', name: 'Nước nhỏ mắt Feshkon'},
+		/*
+		|
+		|
+	\	|	/	TO
+	 \     /	BE
+	  \	  /		CONTINUE..
+	   \ /
+	   */
+		// supa glasses mdfk
+		{brand:'bentley_eyewear', name: ''},
+		{brand:'ested', name: ''},
+		{brand:'linda_farrow', name: ''},
+		{brand:'baton_perreira', name: ''},
+		{brand:'ralph_vaessen', name: ''},
+		{brand:'mykita', name: ''}
 		 ]; 

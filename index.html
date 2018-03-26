@@ -19,10 +19,26 @@
       <ul>
            <li><a href="index.html">TRANG CHỦ</a></li>
        		<li class="dropdown">
- 		  	 <a href="javascript:void(0)" class="dropbtn">SẢN PHẨM</a>
+ 		  	 <a href="javascript:void(0)" class="dropbtn">ÁP TRÒNG</a>
     		 <div class="dropdown-content">
-      			<a href="#" id="ap_trong" onClick="xoa_noidung()">ÁP TRÒNG</a>
-      			<a href="#" id="kinh" onClick="xoa_noidung()">KÍNH THỜI TRANG</a>
+      			<a href="#" id="amo" onClick="xoa_noidung()">Áp tròng AMO</a>
+      			<a href="#" id="maxim" onClick="xoa_noidung()">Áp tròng Maxim</a>
+      			<a href="#" id="seed" onClick="xoa_noidung()">Áp tròng Seed</a>
+      			<a href="#" id="bl" onClick="xoa_noidung()">Áp tròng Bausch &amp; Lomb</a>
+      			<a href="#" id="freshvue" onClick="xoa_noidung()">Áp tròng FreshVue</a>
+				<a href="#" id="freshkon" onClick="xoa_noidung()">Áp tròng Freshkon</a>
+    		 </div>
+ 		  </li>
+
+ 		  <li class="dropdown">
+ 		  	 <a href="javascript:void(0)" class="dropbtn">KÍNH THỜI TRANG</a>
+    		 <div class="dropdown-content">
+      			<a href="#" id="bentley_eyewear" onClick="xoa_noidung()">Bentley Eyewear</a>
+      			<a href="#" id="estede" onClick="xoa_noidung()">Estede</a>
+      			<a href="#" id="linda_farrow" onClick="xoa_noidung()">Linda Farrow</a>
+      			<a href="#" id="baton_perreira" onClick="xoa_noidung()">Baton Perreira</a>
+      			<a href="#" id="ralph_vaessen" onClick="xoa_noidung()">Ralph Vaessen</a>
+      			<a href="#" id="mykita" onClick="xoa_noidung()">Mykita</a>
     		 </div>
  		  </li>
          <li><a href="#" onClick="lien_he()">LIÊN HỆ</a></li>
@@ -30,18 +46,10 @@
     </nav>
   </header>
 	
-	<!-- Xóa nội dung các sản phẩm của hãng khi click sang mục khác như ÁP TRÒNG/KÍNH THỜI TRANG -->
-	<script>
-	function xoa_noidung()
-		{
-			document.getElementById("product_content").innerHTML='';
-		}
-	</script>
-	<!-- đóng khung tạm script này vào đây -->
+
 	
 	
-	<div id="menu_va_noidung"><!-- khung tất cả cho dễ hiểu xD xuống dưới sẽ thấy comment tương tự-->
-	
+	<div id="section">
 	<div id="product_menu">
     <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
@@ -93,7 +101,7 @@
 	
 	</div>
 		
-		</div> <!-- khung tất cả cho dễ hiểu xD -->
+		</div>
 	
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2018 - <strong>L_T_Q</strong></div>
