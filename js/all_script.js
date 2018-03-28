@@ -2,10 +2,12 @@
 function noidungsanpham(element){
 	"use strict";
 	//alert(element.id);
-	var strHtml="";
+	var strHtml='';
 	var strID=element.id;
 	var aIndex= strID.substr(1);
-	strHtml += $san_pham[aIndex].name;
+	strHtml += $san_pham[aIndex].name_display;
+	strHtml += $san_pham[aIndex].image;
+	strHtml += $san_pham[aIndex].price;
 	document.getElementById("product_content").innerHTML=strHtml;
 	}
 
@@ -26,7 +28,7 @@ function noidungsanpham(element){
 						strHtml += '<li onclick="noidungsanpham(this)" id="';
 						strHtml += strID1;
 						strHtml += '"><a href="#">';
-						strHtml += $san_pham[i].name;
+						strHtml += $san_pham[i].name_menu;
 						strHtml +=	'</a></li>';
 					} 
 			}	
