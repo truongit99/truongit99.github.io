@@ -65,3 +65,104 @@ function xoa_noidung()
 		{
 			document.getElementById("product_content").innerHTML='';
 		}
+
+
+// Script của modal box 4 cái ảnh ở cuối trang homepage
+
+function modal_box(){
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    	}
+	}
+}
+
+
+function modal_box1(){
+// Get the modal
+var modal = document.getElementById('myModal1');
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    	}
+	}
+}
+
+
+
+function modal_box2(){
+// Get the modal
+var modal = document.getElementById('myModal2');
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    	}
+	}
+}
+
+
+
+function modal_box3(){
+// Get the modal
+var modal = document.getElementById('myModal3');
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    	}
+	}
+}
+

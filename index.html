@@ -1,5 +1,4 @@
-﻿
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -9,15 +8,17 @@
 	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/all_var.js"></script>
 	<script type="text/javascript" src="js/all_script.js"></script>
-
+  
 	
 </head>
 <body>
+	<a name="top">
 <div class="container">
   <header>
     <div class="primary_header">
       <a href="index.html"><img class="title" src="logo.png" width="100%" alt="logo.png" title="Chào mừng các bạn đến với công ty kính mắt Eyeonic"/></a>
     </div>
+	   
     <nav class="secondary_header">
       <ul>
            <li><a href="index.html">TRANG CHỦ</a></li>
@@ -46,7 +47,7 @@
       			<a href="#" id="mikita" onClick="xoa_noidung()">Mikita</a>
     		 </div>
  		  </li>
-        <li><a href="#social_contact">LIÊN HỆ</a></li>
+        <li><a href="#bot">LIÊN HỆ</a></li>
         <li><a href="#" onClick="lien_he()">VỀ CHÚNG TÔI</a></li>
 
       </ul>
@@ -64,28 +65,119 @@
       <p>Chúng tôi có đội ngũ kỹ thuật viên tay nghề cao cùng với trang thiết bị máy móc hiện đại đảm bảo có thể mài và lắp ráp hoàn chỉnh các chi tiết kính mắt một cách hoàn hảo theo đúng đơn kính. Đặc biệt chúng tôi có máy đo chiều cao tâm kính chuyên dụng của nhật bản nên khi lắp kính không chỉ đảm bảo tâm kính theo phương ngang (đó là khoảng cách đồng tử PD) mà còn đảm bảo tâm kính theo phương dọc theo độ trễ kính cao thấp của từng người đeo (gọi là chiều cao tâm kính). Công nghệ trên thiết bị đo chiều cao tâm kính được áp dụng đầu tiên và duy nhất tại việt nam hiện nay, giúp khi người sử dụng kính thuốc đúng tâm theo hai chiều hạn chế việc tăng số kính do đeo kính không đúng tâm theo hai phương nói trên.</p>
       <p>Sự đa dạng về mẫu mã, phong phú về mặt giá thành cùng với đội ngũ nhân viên tư vấn có kiến thức chuyên sâu sẽ tư vấn cho khách hàng những kiểu dáng mắt kính đẹp phù hợp với gương mặt, biến những cặp kính thuốc trở thành những cặp kính thời trang giúp Quý Khách cảm thấy hoàn toàn tự tin, thoải mái trong công việc và những lúc vui chơi giải trí.</p>
     </article>
-    <aside class="right_article"><img src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/> </aside>
+    <aside class="right_article"><img id="intro " src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/> </aside>
 		 
   <div id="anh" class="row">
     <div class="columns">
-      <p class="thumbnail_align"><img width="250px;" src="pics in homepage/Cartier ESW00050_25m.png" alt="Cartier ESW00050"/> </p>
+      <p class="thumbnail_align"><img class="introbot" id="myBtn" onclick="modal_box()" width="250px;" src="pics in homepage/Cartier ESW00050_25m.png" alt="Cartier ESW00050"/> </p>
       <h4>Cartier ESW00050</h4>
       <p class="price">25.000.000<sup>đ</sup></p>
+
+      <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center>
+        <h2 style="color: red">Đây là thông tin chi tiết về sản phẩm</h2>
+         </center>
+         <table>
+           <th>
+        <img src="pics in homepage/Cartier ESW00050_25m.png" width="500px;" />
+        </th>
+        <th width="100px;">
+          <p></p>
+        </th>
+        <th>
+          <p>Thông tin chi tiết sẽ được hiển thị tại đây như là thông tin về thương hiệu, kiểu dáng, ngày sản xuất, .....</p>
+        </th>
+         </table>
+      </div>
     </div>
+
+ </div>
+
+
     <div class="columns">
-      <p class="thumbnail_align"> <img width="250px;" src="pics in homepage/Cartier ESW00039_27.5m.png" alt="Cartier ESW00039"/></p>
+      <p class="thumbnail_align"> <img class="introbot" id="myBtn1" onclick="modal_box1()" width="250px;" src="pics in homepage/Cartier ESW00039_27.5m.png" alt="Cartier ESW00039"/></p>
       <h4>Cartier ESW00039</h4>
       <p class="price">27.500.000<sup>đ</sup></p>
+       <div id="myModal1" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center>
+        <h2 style="color: red">Đây là thông tin chi tiết về sản phẩm</h2>
+         </center>
+         <table>
+           <th>
+        <img src="pics in homepage/Cartier ESW00039_27.5m.png" width="500px;" />
+        </th>
+        <th width="100px;">
+          <p></p>
+        </th>
+        <th>
+          <p>Thông tin chi tiết sẽ được hiển thị tại đây như là thông tin về thương hiệu, kiểu dáng, ngày sản xuất, .....</p>
+        </th>
+         </table>
+       </div>
+    </div>
+
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img width="250px;" src="pics in homepage/Cartier ESW00093_26.5m.png" alt="Cartier ESW00093"/> </p>
+      <p class="thumbnail_align"> <img class="introbot" id="myBtn2" onclick="modal_box2()" width="250px;" src="pics in homepage/Cartier ESW00093_26.5m.png" alt="Cartier ESW00093"/> </p>
       <h4>Cartier ESW00093</h4>
       <p class="price">26.500.000<sup>đ</sup></p>
+       <div id="myModal2" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center>
+        <h2 style="color: red">Đây là thông tin chi tiết về sản phẩm</h2>
+         </center>
+         <table>
+           <th>
+        <img src="pics in homepage/Cartier ESW00093_26.5m.png" width="500px;" />
+        </th>
+        <th width="100px;">
+          <p></p>
+        </th>
+        <th>
+          <p>Thông tin chi tiết sẽ được hiển thị tại đây như là thông tin về thương hiệu, kiểu dáng, ngày sản xuất, .....</p>
+        </th>
+         </table>
+      </div>
+    </div>
+		
+		<a name="bot"></a>
+
     </div>
     <div class="columns">
-      <p class="thumbnail_align"> <img width="250px;" src="pics in homepage/Cartier T8200616_20.6m.png" alt="Cartier T8200616"/> </p>
+      <p class="thumbnail_align"> <img class="introbot" id="myBtn3" onclick="modal_box3()" width="250px;" src="pics in homepage/Cartier T8200616_20.6m.png" alt="Cartier T8200616"/> </p>
       <h4>Cartier T8200616</h4>
       <p class="price">20.600.000<sup>đ</sup></p>
+       <div id="myModal3" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center>
+        <h2 style="color: red">Đây là thông tin chi tiết về sản phẩm</h2>
+         </center>
+         <table>
+           <th>
+        <img src="pics in homepage/Cartier T8200616_20.6m.png" width="500px;"/>
+        </th>
+        <th width="100px;">
+          <p></p>
+        </th>
+        <th>
+          <p>Thông tin chi tiết sẽ được hiển thị tại đây như là thông tin về thương hiệu, kiểu dáng, ngày sản xuất, .....</p>
+        </th>
+         </table>
+      </div>
+    </div>
+
+
+
     </div>
   </div>
   <div class="row blockDisplay">
@@ -106,12 +198,13 @@
 	
 	<div id="product_content" class="card">
 	
+		<center><button class="gototop"></button></center>
 	</div>
 		
 		</div>
-	
+	<button class="bottotop"><a href="#top" class="linktotop">Về đầu trang</a></button>
   <footer class="secondary_header footer">
-    <div class="copyright">&copy;2018 - <strong>L_T_Q</strong></div>
+    <div class="copyright"> &copy;2018 - <strong>Lâm Trường Quốc</strong></div>
   </footer>
 </div>
 
