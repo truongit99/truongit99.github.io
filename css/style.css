@@ -1,4 +1,4 @@
-@charset "UTF-8";
+	@charset "UTF-8";
 
  @font-face 
 {
@@ -234,8 +234,8 @@
 .secondary_header {
 	font-size: 18px;
 	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 27.5px;
+	padding-bottom: 30px;
 	background-color: #B3B3B3;
 	clear: left;
 }
