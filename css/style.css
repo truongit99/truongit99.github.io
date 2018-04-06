@@ -377,7 +377,6 @@
 }
 .copyright {
 	text-align: center;
-	float: right;
 	background-color: #717070;
 	color: #FFFFFF;
 	text-transform: uppercase;
@@ -385,7 +384,6 @@
 	letter-spacing: 2px;
 	border-top-width: 2px;
 	font-family: "Source Sans Pro";
-	margin-right: 100px;
 }
 body {
 	margin-top: 0px;
@@ -573,6 +571,7 @@ nav.vertical li:hover > ul{
 
 .name_display
 {
+	margin-top: 0.5em;
 	text-align: center;
 	font-size: 48px;
 	font-family: altus;
