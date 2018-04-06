@@ -626,6 +626,7 @@ nav.vertical li:hover > ul{
 }
 
 
+/* tạo nút lên đầu trang*/
 .bottotop{
 	width:100%;
 	height: 20px;
@@ -643,5 +644,68 @@ nav.vertical li:hover > ul{
 	height: 0px;
 }
 
+
+/*
+	Thêm slide text 
+*/
+
+.item-1, 
+.item-2, 
+.item-3 {
+	color: red;
+	position: absolute;
+  	display: block;
+	top: 0.4em;
+ 	width: 70%;
+	font-size: 2em;
+
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 15% { left: -100%; opacity: 0; }
+  30%,45% { left: 25%; opacity: 1; }
+ 45%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 40% { left: -100%; opacity: 0; }
+  55%,70% { left: 25%; opacity: 1; }
+ 70%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 65% { left: -100%; opacity: 0; }
+  80%, 95% { left: 25%; opacity: 1; }
+  95%,100% { left: 110%; opacity: 0; }
+}
+
+
+/*
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
 
 
