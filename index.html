@@ -2,7 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>TRANG CHỦ</title>
+<script>
+var txt="~~~Welcome to Eyeonic Company~~~";
+var espera=200;
+var refresco=null;
+function rotulo_title() 
+{
+document.title=txt;
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+refresco=setTimeout("rotulo_title()",espera);
+}
+rotulo_title();
+</script>
 	<link rel="icon" href="favicon_eye.ico" type="image/x-icon">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
@@ -12,18 +23,7 @@
 	
 </head>
 <body>
-	<a name="top">
-		
-		<!--Slide text -->
-	<div class="text_slide">
-<p class="item-1">This is your last chance. After this, there is no turning back.</p>
-
-<p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
-
-<p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
-	</div>
-	
-<div class="container">
+<div id="container" class="container">
   <header>
     <div class="primary_header">
       <a href="index.html"><img class="title" src="logo.png" width="100%" alt="logo.png" title="Chào mừng các bạn đến với công ty kính mắt Eyeonic"/></a>
@@ -35,41 +35,38 @@
        		<li class="dropdown">
  		  	 <a href="#anh" class="dropbtn">ÁP TRÒNG</a>
     		 <div class="dropdown-content">
-      			<a href="#" id="amo" onClick="xoa_noidung()">Áp tròng AMO</a>
-      			<a href="#" id="maxim" onClick="xoa_noidung()">Áp tròng Maxim</a>
-      			<a href="#" id="seed" onClick="xoa_noidung()">Áp tròng Seed</a>
-      			<a href="#" id="bl" onClick="xoa_noidung()">Áp tròng Bausch &amp; Lomb</a>
-      			<a href="#" id="freshvue" onClick="xoa_noidung()">Áp tròng FreshVue</a>
-				<a href="#" id="freshkon" onClick="xoa_noidung()">Áp tròng Freshkon</a>
+      			<a href="#" id="amo" onClick="delete_content()">Áp tròng AMO</a>
+      			<a href="#" id="maxim" onClick="delete_content()">Áp tròng Maxim</a>
+      			<a href="#" id="seed" onClick="delete_content()">Áp tròng Seed</a>
+      			<a href="#" id="bl" onClick="delete_content()">Áp tròng Bausch &amp; Lomb</a>
+      			<a href="#" id="freshvue" onClick="delete_content()">Áp tròng FreshVue</a>
+				<a href="#" id="freshkon" onClick="delete_content()">Áp tròng Freshkon</a>
     		 </div>
  		  </li>
 
  		  <li class="dropdown">
  		  	 <a href="#anh" class="dropbtn">KÍNH THỜI TRANG</a>
     		 <div class="dropdown-content">
-      			<a href="#" id="bentley_eyewear" onClick="xoa_noidung()">Bentley Eyewear</a>
-      			<a href="#" id="estede" onClick="xoa_noidung()">Estede</a>
-      			<a href="#" id="linda_farrow" onClick="xoa_noidung()">Linda Farrow</a>
-      			<a href="#" id="lunor" onclick="xoa_noidung()">Lunor</a>
-      			<a href="#" id="barton_perreira" onClick="xoa_noidung()">Barton Perreira</a>
-      			<a href="#" id="ralph_vaessen" onClick="xoa_noidung()">Ralph Vaessen</a>
-      			<a href="#" id="von_akel" onClick="xoa_noidung()">Von Akel</a>
-      			<a href="#" id="mikita" onClick="xoa_noidung()">Mikita</a>
+      			<a href="#" id="bentley_eyewear" onClick="delete_content()">Bentley Eyewear</a>
+      			<a href="#" id="estede" onClick="delete_content()">Estede</a>
+      			<a href="#" id="linda_farrow" onClick="delete_content()">Linda Farrow</a>
+      			<a href="#" id="lunor" onclick="delete_content()">Lunor</a>
+      			<a href="#" id="barton_perreira" onClick="delete_content()">Barton Perreira</a>
+      			<a href="#" id="ralph_vaessen" onClick="delete_content()">Ralph Vaessen</a>
+      			<a href="#" id="von_akel" onClick="delete_content()">Von Akel</a>
+      			<a href="#" id="mikita" onClick="delete_content()">Mikita</a>
     		 </div>
  		  </li>
-        <li><a href="#bot">LIÊN HỆ</a></li>
-        <li><a href="#" onClick="lien_he()">VỀ CHÚNG TÔI</a></li>
+        <li id="contact_us"><a href="#bottom">LIÊN HỆ</a></li>
+        <li><a href="#" onClick="about_us()">VỀ CHÚNG TÔI</a></li>
 
       </ul>
     </nav>
   </header>
 	
 
-	
-	
 	<div id="section">
 	<div id="product_menu">
-    <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
       <h3>GIỚI THIỆU</h3>
       <p>Chúng tôi có đội ngũ kỹ thuật viên tay nghề cao cùng với trang thiết bị máy móc hiện đại đảm bảo có thể mài và lắp ráp hoàn chỉnh các chi tiết kính mắt một cách hoàn hảo theo đúng đơn kính. Đặc biệt chúng tôi có máy đo chiều cao tâm kính chuyên dụng của nhật bản nên khi lắp kính không chỉ đảm bảo tâm kính theo phương ngang (đó là khoảng cách đồng tử PD) mà còn đảm bảo tâm kính theo phương dọc theo độ trễ kính cao thấp của từng người đeo (gọi là chiều cao tâm kính). Công nghệ trên thiết bị đo chiều cao tâm kính được áp dụng đầu tiên và duy nhất tại việt nam hiện nay, giúp khi người sử dụng kính thuốc đúng tâm theo hai chiều hạn chế việc tăng số kính do đeo kính không đúng tâm theo hai phương nói trên.</p>
@@ -79,8 +76,11 @@
 		<!--nhúng video và thêm ảnh quảng cáo -->
 		<center><iframe width="90%" height="500px" src="https://www.youtube.com/embed/twAa6oBlBV8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
     </article>
-    <aside class="right_article"><img id="intro " src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/>
-		<img src="pics in homepage/ad1.jpg" width="100%;" height="300px;"/></aside>
+		
+    <aside class="right_article">
+		<img id="intro " src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/>
+		<img src="pics in homepage/ad1.jpg" width="100%;" height="300px;" alt=""/>
+		</aside>
 	
 		
 		<!---->
@@ -99,7 +99,7 @@
          </center>
          <table>
            <th>
-        <img src="pics in homepage/Cartier ESW00050_25m.png" width="500px;" />
+        <img src="pics in homepage/Cartier ESW00050_25m.png" width="500px;" alt=""/>
         </th>
         <th width="100px;">
           <p></p>
@@ -127,7 +127,7 @@
          </center>
          <table>
            <th>
-        <img src="pics in homepage/Cartier ESW00039_27.5m.png" width="500px;" />
+        <img src="pics in homepage/Cartier ESW00039_27.5m.png" width="500px;" alt=""/>
         </th>
         <th width="100px;">
           <p></p>
@@ -153,7 +153,7 @@
          </center>
          <table>
            <th>
-        <img src="pics in homepage/Cartier ESW00093_26.5m.png" width="500px;" />
+        <img src="pics in homepage/Cartier ESW00093_26.5m.png" width="500px;" alt=""/>
         </th>
         <th width="100px;">
           <p></p>
@@ -165,8 +165,10 @@
       </div>
     </div>
 		
-		<a name="bot"></a>
-
+		<!-- BOTTOM ANCHOR -->	
+		<p id="bottom"></p>
+		<!-- BOTTOM ANCHOR -->	
+		
     </div>
     <div class="columns">
       <p class="thumbnail_align"> <img class="introbot" id="myBtn3" onclick="modal_box3()" width="250px;" src="pics in homepage/Cartier T8200616_20.6m.png" alt="Cartier T8200616"/> </p>
@@ -181,7 +183,7 @@
          </center>
          <table>
            <th>
-        <img src="pics in homepage/Cartier T8200616_20.6m.png" width="500px;"/>
+        <img src="pics in homepage/Cartier T8200616_20.6m.png" width="500px;" alt=""/>
         </th>
         <th width="100px;">
           <p></p>
@@ -209,7 +211,7 @@
     <p class="social_icon"><a href="https://www.facebook.com/windowscreatorupdate" target="blank"><img src="pics in homepage/fb.png" width="60px" alt="Liên hệ với chúng tôi trên Facebook"/></a></p>
     <p class="social_icon"><a href="https://plus.google.com/u/0/+HCBTLiveFootballbongdalivehcbt" target="blank"><img src="pics in homepage/gg.png" width="60px" alt="Liên hệ với chúng tôi trên Google Plus"/></a></p>
     <p class="social_icon"><a href="https://twitter.com/PhmTrng65905491" target="blank"><img src="pics in homepage/tt.png" width="60px" alt="Liên hệ với chúng tôi trên  Twitter"/></a></p>
-    <p class="social_icon"><a href="https://www.tumblr.com/blog/truongit99" target="blank"><img src="pics in homepage/pt.png" width="60px" alt="Liên hệ với chúng tôi trên Pinterest"/></a></p>
+    <p class="social_icon"><a href="https://www.tumblr.com/blog/truongit99" target="blank"><img src="pics in homepage/tb.png" width="60px" alt="Liên hệ với chúng tôi trên Tumblr"/></a></p>
   </div> 
 	</div> <!-- ~ID product menu~ HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-->
 	
@@ -219,9 +221,13 @@
 	</div>
 		
 		</div>
-	<button class="bottotop"><a href="#top" class="linktotop">Về đầu trang</a></button>
-  <footer class="secondary_header footer">
-    <div class="copyright"> &copy;2018 - <center><strong>Lâm Trường Quốc</strong></center></div>
+
+	<div id="go_top">
+	<a href="#container"><img class="go_top" src="top.png" alt=""/></a>
+ 	</div>
+	
+	<footer class="secondary_header footer">
+    <div class="copyright"> &copy;2018 - <strong>Lâm Trường Quốc</strong></div>
   </footer>
 </div>
 
