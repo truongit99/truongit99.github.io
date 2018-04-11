@@ -24,6 +24,7 @@
   min-width:0;
   word-wrap:break-word;
   background-color:#fff;
+  border: 1px; /* more easier to text align da price*/
   background-clip:border-box;
 }
 
@@ -218,6 +219,8 @@
 	padding-right: 10%;
 }
 .container .columns h4 {
+	font-family: altus;
+	font-size: 38px;
 	text-align: center;
 	color: #01B2D1;
 }
@@ -575,7 +578,7 @@ nav.vertical li:hover > ul{
 .price
 {
 	color: red;
-	font-size: 34px;
+	font-size: 42px;
 	font-family: rukola;
 	text-align: center;
 }
