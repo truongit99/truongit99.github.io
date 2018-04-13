@@ -738,3 +738,30 @@ nav.vertical li:hover > ul{
 {
 	width: 50px;
 }
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-container:hover .img-magnifier-glass {
+  position: absolute;
+  border-radius: 10%;
+  cursor: zoom-in;
+  /*Set the size of the magnifier glass:*/
+  width: 175px;
+  height: 175px;
+}
+
+p.thumbnail_align.img-magnifier-container img
+{
+	width: 250px;
+	border: 1px solid lightgray;
+	border-radius: 10%;
+}
+
+.detail
+{
+	text-align: center;
+}

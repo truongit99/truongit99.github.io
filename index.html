@@ -20,7 +20,7 @@ rotulo_title();
 	<script type="text/javascript" src="js/all_var.js"></script>
 	<script type="text/javascript" src="js/all_script.js"></script>
   
-
+	
 </head>
 <body>
 <div id="container" class="container">
@@ -68,7 +68,7 @@ rotulo_title();
 	<div id="section">
 	<div id="product_menu"> <!-- PRODUCT MENU -->
     <article class="left_article">
-      <h3>W E L C O M E</h3>
+      <h3>INTRODUCTION</h3>
       <p>We have a team of highly skilled technicians along with modern machinery and equipment that can perfectly grind and assemble the eyepiece in a perfect manner. We also have special height gauges from Japan particular designed to perfectly handle the task, so the center of glasses are not only ensured horizontally (the distance between the pupils) but also longitudinally for particular wearers. The technology of the first and only ventricular metering device in Vietnam is now being used to help people who use the right glasses in two dimensions to limit the increase in the number of optical problems caused by the misuse of glasses.</p>
       <p>The variety of models, rich in terms of price together with consultants, well- equipped with in-depth knowledge will advise customers the right type of glasses that matches face shapes and medical needs, helps you choose fashionable glasses that makes you feel confident, comfortable in work and leisure time.</p>
 		
@@ -79,36 +79,56 @@ rotulo_title();
 		
     <aside class="right_article">
 		<img id="intro " src="pics in homepage/gioi_thieu.png" alt="" width="400" height="200" class="placeholder"/>
-		<img src="pics in homepage/ad1.jpg" width="100%;" height="300px;" alt=""/>
+		<img src="pics in homepage/ad.png" width="100%" height="340px;" alt=""/>
 		</aside>
 	
 	
   <div class="row"> 	<!-- 4 sample pictures -->
     <div class="columns">
-      <p class="thumbnail_align"><img class="introbot small" width="250px;" src="pics in homepage/BENTLEY B-007 RGD(300m).jpg" alt="BENTLEY B-007 RG"/> </p>
+      <p class="thumbnail_align img-magnifier-container"><img id="picture_1" class="introbot" src="pics in homepage/BENTLEY B-007 RGD(300m).jpg" alt="BENTLEY B-007 RG"/></p>
       <h4>BENTLEY B-007 RG</h4>
       <p class="price">25.000.000<sup>đ</sup></p>
  </div>
-
-		
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("picture_1", 3);
+</script>
+	
+	  
     <div class="columns">
-      <p class="thumbnail_align"> <img class="introbot" width="250px;" src="pics in homepage/ESTEDE E-007 RG(153m).jpg" alt="ESTEDE E-007 RG"/></p>
+      <p class="thumbnail_align img-magnifier-container"><img id="picture_2" class="introbot" src="pics in homepage/ESTEDE E-007 RG(153m).jpg" alt="ESTEDE E-007 RG"/></p>
       <h4>ESTEDE E-007 RG</h4>
       <p class="price">27.500.000<sup>đ</sup></p>
     </div>
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("picture_2", 3);
+</script>
 	  
     <div class="columns">
-      <p class="thumbnail_align"> <img class="introbot" width="250px;" src="pics in homepage/LUNOR - S2 1202 03(12M).jpg" alt="LUNOR - S2 1202 03"/> </p>
+      <p class="thumbnail_align img-magnifier-container"><img id="picture_3" class="introbot" src="pics in homepage/LUNOR - S2 1202 03(12M).jpg" alt="LUNOR - S2 1202 03"/></p>
       <h4>LUNOR - S2 1202 03</h4>
-      <p class="price">26.500.000<sup>đ</sup></p>
-      
+      <p class="price">26.500.000<sup>đ</sup></p>     
     </div>
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("picture_3", 3);
+</script>
 	  
     <div class="columns">
-      <p class="thumbnail_align"> <img class="introbot" width="250px;" src="pics in homepage/RALPH VAESSEN - SAAR(28M).jpg" alt="RALPH VAESSEN - SAAR"/> </p>
+      <p class="thumbnail_align img-magnifier-container"><img id="picture_4" class="introbot" src="pics in homepage/RALPH VAESSEN - SAAR(28M).jpg" alt="RALPH VAESSEN - SAAR"/></p>
       <h4>RALPH VAESSEN - SAAR</h4>
       <p class="price">20.600.000<sup>đ</sup></p>
         </div>
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("picture_4", 3);
+</script>
+	  
   </div> 			<!-- 4 sample pictures -->
 		
 		
@@ -134,13 +154,14 @@ rotulo_title();
   </div> 
 	  
 	</div> <!-- PRODUCT MENU -->
-	</div> <!-- END SECTION --> 
+	
 	
 	<div id="product_content" class="card"> <!-- PRODUCT CONTENT -->
 		
 	</div> 									<!-- PRODUCT CONTENT -->
 		
-		
+	
+	</div> <!-- END SECTION --> 
 
 	<div id="go_top">
 	<a href="#container"><img class="go_top" src="top.png" alt="Go to the top of the page"/></a>
