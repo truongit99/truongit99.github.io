@@ -2,11 +2,13 @@
 <html>
 <head>
 <style>
-#divtoshow {position:absolute;display:none;color:white;background-color:black}
-#onme {width:150px;height:80px;background-color:yellow;cursor:pointer}
+#divtoshow {position:absolute;display:none;}
+	
+#onme, #onme2 {width:150px;height:80px;background-color:yellow;cursor:pointer}
 </style>
 <script type="text/javascript">
-var divName = 'divtoshow'; // div that is to follow the mouse (must be position:absolute)
+var divName = 'divtoshow';
+	// div that is to follow the mouse (must be position:absolute)
 var offX = 15;          // X offset from mouse position
 var offY = 15;          // Y offset from mouse position
 
@@ -22,7 +24,13 @@ document.onmousemove = follow;
 </script>
 </head>
 <body>
-<div id="divtoshow">test</div>
+<div id="divtoshow">
+	<div> Vai ca cut luon</div>
+	<img src="top.png" width="100px;"/>
+	</div>
 <br><br>
-<div id='onme' onMouseover='document.getElementById(divName).style.display="block"' onMouseout='document.getElementById(divName).style.display="none"'>Mouse over this</div>
+<div id="onme" onMouseover="document.getElementById(divName).style.display='block'" onMouseout="document.getElementById(divName).style.display='none'">Mouse over this</div>
+	<br><br>
+	<div id="onme2" onMouseover="document.getElementById(divName).style.display='block'" onMouseout="document.getElementById(divName).style.display='none'">Mouse over this</div>
 </body>
+</html>

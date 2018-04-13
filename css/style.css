@@ -12,6 +12,7 @@
 	src: url(../fonts/iCiel_Altus.otf);
 }
 
+/* bootstrap card and btn */
 .card {
   position:relative;
   display:-webkit-box;
@@ -165,6 +166,111 @@
 .card-columns .card {
   margin-bottom:.75rem;
 }
+
+.btn {
+  display:inline-block;
+  font-weight:400;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover {
+  text-decoration:none;
+}
+
+.btn.focus,
+.btn:focus {
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity:.65;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor:pointer;
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  background-image:none;
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events:none;
+}
+
+.btn-primary {
+  color:#fff;
+  background-color:#007bff;
+  border-color:#007bff;
+}
+
+.btn-primary:hover {
+  color:#fff;
+  background-color:#0069d9;
+  border-color:#0062cc;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
+}
+
+.btn-outline-primary {
+  color:#007bff;
+  background-color:transparent;
+  background-image:none;
+  border-color:#007bff;
+}
+
+.btn-outline-primary:hover {
+  color:#fff;
+  background-color:#007bff;
+  border-color:#007bff;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color:#007bff;
+  background-color:transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color:#fff;
+  background-color:#007bff;
+  border-color:#007bff;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
+}
+
+/* ENDDDDDDD BOOTSTRAP */
 
 
 .container {
@@ -632,4 +738,3 @@ nav.vertical li:hover > ul{
 {
 	width: 50px;
 }
-

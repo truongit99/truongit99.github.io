@@ -8,6 +8,7 @@ function noidungsanpham(element){
 	strHtml += $san_pham[aIndex].name_display;
 	strHtml += $san_pham[aIndex].image;
 	strHtml += $san_pham[aIndex].price;
+	strHtml += $san_pham[aIndex].detail;
 	document.getElementById("product_content").innerHTML=strHtml;
 	}
 
@@ -70,5 +71,4 @@ function delete_content()
 			document.getElementById("product_content").innerHTML='';
 			document.getElementById("contact_us").style.display = "none";
 		}
-
 
