@@ -649,7 +649,7 @@ nav.vertical li:hover > ul{
 {
 	font-family: rukola;
 	font-size: 30px;
-	width: 367px;
+	width: 100%;
 	height: 100px;
 	background-color: transparent;
 	border: 2px deeppink solid;
