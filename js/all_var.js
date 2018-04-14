@@ -34,11 +34,11 @@ var $san_pham=[
 	
 	
 	
-		// supa glasses mdfk
-		// supa glasses mdfk
-		// supa glasses mdfk
-		// supa glasses mdfk
-		// supa glasses mdfk
+		// supa glasses 
+		// supa glasses 
+		// supa glasses 
+		// supa glasses 
+		// supa glasses 
 		{brand:'bentley_eyewear', name_menu: 'BENTLEY B-001 WG', name_display: '<div class="name_display">Bentley B-001 WG</div>', image: '<img class="product_image" src="products/glasses/bentley_eyewear/BENTLEY-B-001 WG(321.5m).jpg"/>', price: '<div class="price">321.500.000<sup>đ</sup></div>', detail: '<div class="detail"><a href="#"><input type="button" class="btn btn-outline-primary" value="Detail"/></a></div>'},
 		{brand:'bentley_eyewear', name_menu: 'BENTLEY B-007 RGD', name_display: '<div class="name_display">Bentley B-007 RGD</div>', image: '<img class="product_image" src="products/glasses/bentley_eyewear/BENTLEY-B-007 RGD(300m).jpg"/>', price: '<div class="price">300.000.000<sup>đ</sup></div>', detail: '<div class="detail"><a href="#"><input type="button" class="btn btn-outline-primary" value="Detail"/></a></div>'},
 		{brand:'bentley_eyewear', name_menu: 'BENTLEY B-001 WG', name_display: '<div class="name_display">Bentley B-001 WG</div>', image: '<img class="product_image" src="products/glasses/bentley_eyewear/BENTLEY-B-003 RG(272m).jpg"/>', price: '<div class="price">272.000.000<sup>đ</sup></div>', detail: '<div class="detail"><a href="#"><input type="button" class="btn btn-outline-primary" value="Detail"/></a></div>'},

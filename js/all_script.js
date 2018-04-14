@@ -45,27 +45,27 @@ function noidungsanpham(element){
 function about_us()
 {
 	"use strict";
-document.getElementById("section").innerHTML='<div id="product_menu"><div id="lien_he_button"><input class="lien_he_button" type="button" value="Store 1" onClick="show1()"/><center style="padding-top: 10px; font-size: 20px; color: deeppink;">STORE 1</center><br><br><input class="lien_he_button" type="button" value="Store 2" onClick="show2()"/><center style="padding-top: 10px; font-size: 20px; color: deeppink;">STORE 2</center><br></div><div id="lien_he_map"><div id="lien_he_map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9307701538314!2d105.81663121457862!3d21.035455885994697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0d6eedb3b9%3A0xe096499f4f1f76be!2sAPTECH!5e0!3m2!1svi!2s!4v1521376416883" width="100%" height="290px" frameborder="0" style="border:0" ></iframe></div><div id="lien_he_map_2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2150296714467!2d105.84092161457755!3d20.98401588602264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac428c3336e5%3A0xb7d4993d5b02357e!2sAptech+Computer+Education!5e0!3m2!1svi!2s!4v1521376869766" width="100%" height="290px" frameborder="0" style="border:0" allowfullscreen></iframe></div></div></div><div id="product_content"></div>';
+document.getElementById("section").innerHTML='<div id="product_menu"><br><div id="email" style="text-align: center"><form action="mailto:lamlon1999@gmail.com" method="post" enctype="text/plain"><input class="btn btn-outline-primary" type="submit" value="Send e-mail to us"></form></div><br><div id="lien_he_button"><input class="lien_he_button" type="button" value="Store 1" onClick="show1()"/><center style="padding-top: 10px; font-size: 20px; color: deeppink;">STORE 1</center><br><br><input class="lien_he_button" type="button" value="Store 2" onClick="show2()"/><center style="padding-top: 10px; font-size: 20px; color: deeppink;">STORE 2</center><br></div><div id="lien_he_map"><div id="lien_he_map_1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9307701538314!2d105.81663121457862!3d21.035455885994697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0d6eedb3b9%3A0xe096499f4f1f76be!2sAPTECH!5e0!3m2!1svi!2s!4v1521376416883" width="100%" height="290px" frameborder="0" style="border:0" ></iframe></div><div id="lien_he_map_2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2150296714467!2d105.84092161457755!3d20.98401588602264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac428c3336e5%3A0xb7d4993d5b02357e!2sAptech+Computer+Education!5e0!3m2!1svi!2s!4v1521376869766" width="100%" height="290px" frameborder="0" style="border:0" allowfullscreen></iframe></div></div></div><div id="product_content"></div>';
 	document.getElementById("contact_us").style.display = "none";
 	document.getElementById("go_top").style.display = "none";
 	
 }
 
-function show1()
+function show1() //show map
 {
 	"use strict";
 	document.getElementById("lien_he_map_1").style.display = "block";
 	document.getElementById("lien_he_map_2").style.display = "none";
 }
 
-function show2()
+function show2() //show map
 {
 	"use strict";
 	document.getElementById("lien_he_map_1").style.display = "none";
 	document.getElementById("lien_he_map_2").style.display = "block";
 }
  
-function delete_content()
+function delete_content() //liek dat function name
 		{
 			"use strict";
 			document.getElementById("product_content").innerHTML='';
